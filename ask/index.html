@@ -1,1 +1,17 @@
-
+<html>
+  <head>
+    <title>Ask A Question</title>
+  </head>
+  <body>
+    <input id="t" type="text" placeholder="Enter question here" />
+    <input id="sub" type="submit" />
+    <h2 id="answer"></h2>
+    <script>
+      const sub = document.getElementById("sub");
+      sub.onclick() = function() {
+        var answers = ["yes","no","maybe"];
+        document.getElementById("answer").innerHTML=answers[parseInt(Math.random()*3)+1];
+      }
+    </script>
+  </body>
+</html>
