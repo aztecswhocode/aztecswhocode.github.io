@@ -7,11 +7,13 @@
     <input id="sub" type="submit" />
     <h2 id="answer"></h2>
     <script>
-      const sub = document.getElementById("sub");
-      sub.onclick() = function() {
+      function exe() {
         var answers = ["yes","no","maybe"];
         document.getElementById("answer").innerHTML=answers[parseInt(Math.random()*3)+1];
       }
+      const sub = document.getElementById("sub");
+      sub.addEventListener("click",exe);
+      
     </script>
   </body>
 </html>
